@@ -1,0 +1,16 @@
+Activity Cards story model (lfm2.5-1.2b-stories)
+
+This is a modified version of LFM2.5-1.2B-Instruct by Liquid AI
+(https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct, revision
+0f604ada3f766f9f257460c4c9f0b5d6f69d431b), licensed under the LFM Open
+License v1.0 (see LICENSE-LFM).
+
+Changes made by the Activity Cards project:
+- Fine-tuned (LoRA, merged) on synthetic social stories for pre-K special
+  education classrooms, written in a fixed JSON format with picture-card ids.
+- Converted to ONNX Runtime GenAI format with int4 weight quantization
+  (block-wise RTN, accuracy level 4) for CPU inference.
+- tokenizer.json: the decoder "Sequence[ByteLevel]" was replaced by the
+  equivalent single "ByteLevel" decoder.
+
+All files in the releases of this repository are such modified files.
